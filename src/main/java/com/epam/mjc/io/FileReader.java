@@ -21,12 +21,11 @@ public class FileReader {
             e.printStackTrace();
         }
 
-        Profile profile = new Profile(
+        return new Profile(
                 profileData.get("Name"),
                 Integer.parseInt(profileData.get("Age")),
                 profileData.get("Email"),
                 Long.parseLong(profileData.get("Phone"))
         );
-        return profile;
     }
 }
